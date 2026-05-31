@@ -1,131 +1,133 @@
-# Bhavya Gera — Portfolio
+# Bhavya Gera — Personal Portfolio
 
-A modern, animated, single-page portfolio for **Bhavya Gera** — AI/ML Engineer.
+A modern developer portfolio showcasing my work in AI, Machine Learning, Deep Learning, Computer Vision, and Full-Stack Development.
 
-Built with **React 19 + TypeScript + Vite + Tailwind CSS v4 + Framer Motion**.
+This portfolio serves as a central hub for my projects, research, technical experience, publications, achievements, and professional journey.
 
-> Replaces the older static portfolio at `bhavyagera1212.github.io/portfolio` with a refreshed design system, glassmorphism cards, animated gradients, scroll-driven motion, and a structured information architecture pulled directly from the latest CV.
+## About Me
+
+I'm **Bhavya Gera**, a Computer Science undergraduate passionate about building intelligent systems that solve real-world problems.
+
+My interests include:
+
+* Generative AI & Large Language Models (LLMs)
+* Agentic AI Systems
+* Retrieval-Augmented Generation (RAG)
+* Computer Vision
+* Deep Learning
+* Full-Stack Development
+* MLOps & Model Evaluation
+
+Currently, I am exploring advanced AI workflows, multimodal systems, and production-ready machine learning applications.
 
 ---
 
-## Features
+## Portfolio Highlights
 
-- Dark, premium UI with aurora gradient + animated grid background
-- Sticky, scroll-aware navbar with active-section highlighting
-- Hero section with code-card terminal mock and quick stats
-- About / stats grid + education timeline
-- Experience timeline (Nutanix MTS Intern — Agentic AI, LLM Eval, RAG)
-- Project showcase (Punjabi Multimodal SDXL, Lung Cancer 99.5%, Lip Reading 98.5%)
-- Research / Publications card (Pansharpening — In Progress)
-- Categorised skill chips (Languages, ML/DL, Backend, Tools)
-- Honors & Awards + Volunteer experience
-- Contact section with quick email CTA
-- Fully responsive, accessible, reduced-motion friendly
+* Professional introduction and technical background
+* Industry experience and internship work
+* AI, ML, and Full-Stack projects
+* Research publications and ongoing work
+* Technical skills and technology stack
+* Awards, achievements, and community involvement
+* Contact and professional profiles
+
+---
+
+## Featured Projects
+
+### Punjabi Multimodal SDXL
+
+Fine-tuned Stable Diffusion XL pipeline capable of generating culturally relevant Punjabi imagery using multimodal learning techniques.
+
+### Lung Cancer Detection System
+
+Deep learning-based medical imaging model achieving high classification performance on lung cancer datasets.
+
+### Lip Reading System
+
+Computer vision and sequence modeling approach for visual speech recognition.
+
+### Research Work
+
+Pansharpening research focused on improving spatial and spectral quality in remote sensing imagery.
 
 ---
 
 ## Tech Stack
 
-| Layer       | Choice                                |
-| ----------- | ------------------------------------- |
-| Framework   | React 19 + Vite 6                     |
-| Language    | TypeScript (strict)                   |
-| Styling     | Tailwind CSS v4 (`@tailwindcss/vite`) |
-| Animations  | Framer Motion                         |
-| Icons       | lucide-react                          |
-| Fonts       | Inter, Space Grotesk, JetBrains Mono  |
+### Frontend
+
+* React 19
+* TypeScript
+* Vite
+* Tailwind CSS v4
+* Framer Motion
+
+### AI / ML
+
+* Python
+* PyTorch
+* TensorFlow
+* Scikit-Learn
+* OpenCV
+* Hugging Face
+
+### Backend & Databases
+
+* Node.js
+* Express.js
+* MongoDB
+* Firebase
+
+### Tools
+
+* Git
+* GitHub
+* Docker
+* Linux
+* VS Code
 
 ---
 
 ## Project Structure
 
-```
+```text
 portfolio/
 ├── public/
-│   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── Achievements.tsx
-│   │   ├── About.tsx
-│   │   ├── Background.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Experience.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── Projects.tsx
-│   │   ├── Publications.tsx
-│   │   ├── Section.tsx
-│   │   └── Skills.tsx
 │   ├── App.tsx
-│   ├── data.ts          ← edit your resume content here
+│   ├── data.ts
 │   ├── index.css
 │   └── main.tsx
-├── index.html
 ├── package.json
-├── tsconfig*.json
-└── vite.config.ts
+├── vite.config.ts
+└── README.md
 ```
 
-All resume content (experience bullets, project tech stacks, awards, links) lives in **one file**:
+All portfolio content is maintained through:
 
-> `src/data.ts`
+```text
+src/data.ts
+```
 
-Update that file to update the entire site.
+Updating this file automatically updates portfolio content across the application.
 
 ---
 
-## Run Locally
+## Local Development
 
 ```bash
-# from the repo root
-cd portfolio
-
-# 1. install deps
 npm install
-
-# 2. start dev server (http://localhost:5173)
 npm run dev
-
-# 3. production build
-npm run build
-npm run preview
 ```
-
-Node 18+ recommended.
-
 ---
 
-## Deploy
+## Connect With Me
 
-### Option 1 — Vercel (recommended)
-
-1. Push the `portfolio/` folder to a GitHub repo.
-2. Import into Vercel → Framework preset: **Vite** → leave defaults → Deploy.
-
-### Option 2 — GitHub Pages
-
-The `vite.config.ts` ships with `base: "./"` so the `dist/` build is portable.
-
-```bash
-npm run build
-# then publish the dist/ folder via gh-pages, or push to a `gh-pages` branch.
-```
-
-To replace the existing `bhavyagera1212.github.io/portfolio`, push the contents of `dist/`
-to the `gh-pages` branch (or to `main` of `bhavyagera1212.github.io` if it's a user site).
+* GitHub: github.com/bhavyagera1212
+* LinkedIn: linkedin.com/in/bhavyagera
+* Email: [bhavyagera1212@gmail.com](mailto:bhavyagera1212@gmail.com)
 
 ---
-
-## Customising
-
-- **Content / copy** → `src/data.ts`
-- **Colors / theme tokens** → `src/index.css` (under the `@theme` block)
-- **Sections order** → `src/App.tsx`
-- **Section header styling** → `src/components/Section.tsx`
-
----
-
-## License
-
-Personal portfolio — all content © Bhavya Gera. Code structure free to fork for inspiration.
